@@ -1,1 +1,2 @@
-console.log(1);
+import about from './about.md'
+console.log(about);
