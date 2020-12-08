@@ -11,7 +11,10 @@ module.exports = {
       {
         test: /\.md$/,
         // use 取值不仅可以使用模块名称，还可以使用模块文件名称
-        use: "./markdown-loader"
+        use: [
+          "html-loader",
+          "./markdown-loader"
+        ]
       }
     ]
   },          // 处理对应模块
